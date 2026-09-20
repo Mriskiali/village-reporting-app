@@ -1,0 +1,8 @@
+{
+  "name": "SPKPPSU Kelurahan",
+  "description": "Sistem Pelaporan Kerja PPSU Kelurahan. Aplikasi pelaporan terpusat untuk petugas dan dashboard monitoring untuk admin.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}

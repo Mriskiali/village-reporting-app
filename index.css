@@ -1,0 +1,82 @@
+/* Gaya global untuk aksesibilitas */
+/* Fokus indikator untuk keyboard navigation */
+*:focus {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
+}
+
+/* Nonaktifkan fokus untuk mouse users untuk pengalaman yang lebih baik */
+@media (prefers-reduced-motion: no-preference) {
+  *:focus:not(.focus-visible) {
+    outline: none;
+  }
+  
+  .focus-visible {
+    outline: 2px solid #f97316;
+    outline-offset: 2px;
+  }
+}
+
+/* Untuk high contrast mode */
+@media (prefers-contrast: high) {
+  * {
+    border: 1px solid;
+  }
+  
+  button, input, select, textarea {
+    border: 2px solid;
+  }
+}
+
+/* Untuk mode gelap jika didukung */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1f2937;
+  }
+}
+
+/* Ukuran teks yang dapat disesuaikan */
+.text-small {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-normal {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-large {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+/* High contrast mode */
+.high-contrast {
+  filter: contrast(1.5);
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+/* Pastikan tombol dan elemen interaktif cukup besar untuk aksesibilitas */
+button, .clickable {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Visually hidden untuk screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
