@@ -51,8 +51,9 @@ npm run dev
 
 1. Buat project di [supabase.com](https://supabase.com) (free tier cukup)
 2. Jalankan `supabase/schema.sql` di SQL Editor
-3. (Opsional) Jalankan `supabase/seed.sql` untuk data contoh
-4. Copy Project URL & anon key ke `.env`
+3. Jalankan `supabase/policies.sql` (Row Level Security per role)
+4. (Opsional) Jalankan `supabase/seed.sql` untuk data contoh
+5. Copy Project URL & anon key ke `.env`
 
 ## Peran
 
